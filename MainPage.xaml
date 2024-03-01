@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Roll_a_Die.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Opacity="0.9">
+
+    <ScrollView>
+
+        <VerticalStackLayout Margin="50" Spacing="50">
+            <VerticalStackLayout x:Name="v1" Spacing="65">
+                <VerticalStackLayout>
+                    <Image
+                        x:Name="img"
+                        HorizontalOptions="Start"
+                        MaximumHeightRequest="260"
+                        MaximumWidthRequest="260"
+                        MinimumHeightRequest="250"
+                        MinimumWidthRequest="250"
+                        VerticalOptions="Start" />
+                    <Image
+                        x:Name="img2"
+                        HorizontalOptions="End"
+                        MaximumHeightRequest="0"
+                        MaximumWidthRequest="0"
+                        MinimumHeightRequest="0"
+                        MinimumWidthRequest="0"
+                        VerticalOptions="End" />
+                </VerticalStackLayout>
+                <Button
+                    x:Name="rollbtn"
+                    Clicked="rollbtn_Clicked"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    MinimumHeightRequest="60"
+                    MinimumWidthRequest="350"
+                    Text="Roll"
+                    TextTransform="Uppercase"
+                    VerticalOptions="Center" />
+            </VerticalStackLayout>
+            <VerticalStackLayout Spacing="15">
+                <Button
+                    x:Name="num_of_dice"
+                    Clicked="num_of_dice_Clicked"
+                    CornerRadius="20"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    MinimumWidthRequest="200"
+                    Text="2 dices" />
+                <Button
+                    x:Name="themebtn"
+                    Clicked="Themebtn_Clicked"
+                    CornerRadius="20"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    MinimumWidthRequest="200"
+                    Text="change theme" />
+                <Button
+                    x:Name="exitBtn"
+                    Clicked="ExitBtn_Clicked"
+                    CornerRadius="20"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    MinimumWidthRequest="200"
+                    Text="Exit" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
